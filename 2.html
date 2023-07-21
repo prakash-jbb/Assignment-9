@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000;
+            height: 100vh;
+        }
+        
+        .container {
+            margin: auto;
+            margin-top: 120PX;
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+        
+        .title {
+            text-align: center;
+            margin: 20px 0px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: #000;
+            justify-content: center;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+        }
+        
+        select {
+            width: 100%;
+            padding: 10px;
+        }
+        
+        #signupBtn {
+            background-color: #000;
+            color: #fff;
+            font-size: 20px;
+            margin-top: 15px;
+            border: none;
+            border: 1px solid black;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        
+        #signupBtn:hover {
+            background-color: #ffffff;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Signup</h1>
+        <form action="post">
+
+            <label for="name">Name</label>
+            <input type="text" />
+
+            <label for="batch">Batch</label>
+            <select name="" id="">
+                <option value="">Sigma 1.0</option>
+                <option value="">Sigma 2.0</option>
+            </select>
+
+            <label for="age">Age</label>
+            <input type="text" />
+
+            <label for="email">Email</label>
+            <input type="email" />
+
+            <label for="password">Password</label>
+            <input type="password" />
+
+            <input type="submit" value="Signup" id="signupBtn" />
+        </form>
+    </div>
+</body>
+
+</html>
